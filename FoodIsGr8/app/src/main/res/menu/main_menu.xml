@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/favorite"
+        android:title=""
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_favorite_24"
+        />
+    <item
+        android:id="@+id/itemMenu"
+        android:title="@string/itemMenu" />
+    <item
+        android:id="@+id/itemServicios"
+        android:title="@string/itemServicios" />
+    <item
+        android:id="@+id/itemUbicanos"
+        android:title="@string/itemUbicanos" />
+</menu>

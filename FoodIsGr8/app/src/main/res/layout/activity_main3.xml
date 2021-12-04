@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageServ1"
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textServ1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Domicios" />
+
+            <TextView
+                android:id="@+id/descriServ1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Descripcion" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageServ2"
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textServ2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Atencion 24 horas" />
+
+            <TextView
+                android:id="@+id/descriServ2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Descripcion" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageServ3"
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textServ3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Llamanos para tus eventos" />
+
+            <TextView
+                android:id="@+id/descriServ3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Descripcion" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageServ4"
+            android:layout_width="160dp"
+            android:layout_height="100dp"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textServ4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gran atencion al cliente" />
+
+            <TextView
+                android:id="@+id/descriServ4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Descripcion" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
