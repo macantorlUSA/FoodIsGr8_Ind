@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".vista.activities.ActivityProductDetail">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/msgDetailTitle"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imgProdDetail"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:contentDescription="@string/msgLogo"
+                tools:ignore="ImageContrastCheck"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/txtProdNameDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/msgProductName"
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtProdDescDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/msgProductDescription" />
+
+            <Button
+                android:id="@+id/btnGoMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/msgGoHome"
+                android:textColor="#616161" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

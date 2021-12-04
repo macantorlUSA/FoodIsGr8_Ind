@@ -2,18 +2,22 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/favorite"
+        android:id="@+id/btnHome"
+        android:icon="@android:drawable/stat_notify_sync"
         android:title=""
-        app:showAsAction="always"
-        android:icon="@drawable/ic_baseline_favorite_24"
-        />
+        app:showAsAction="ifRoom" />
     <item
-        android:id="@+id/itemMenu"
+        android:id="@+id/btnFavorites"
+        android:icon="@drawable/ic_baseline_favorite_24"
+        android:title=""
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/itmMenu"
         android:title="@string/itemMenu" />
     <item
-        android:id="@+id/itemServicios"
+        android:id="@+id/itmServices"
         android:title="@string/itemServicios" />
     <item
-        android:id="@+id/itemUbicanos"
+        android:id="@+id/itmStores"
         android:title="@string/itemUbicanos" />
 </menu>

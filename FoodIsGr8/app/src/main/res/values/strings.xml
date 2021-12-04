@@ -4,5 +4,20 @@
     <string name="itemServicios">Servicios</string>
     <string name="itemUbicanos">Ubícanos</string>
     <string name="welcome">Bienvenidos a FoodIsGr8!</string>
-    <string name="todo">TODO</string>
+    <string name="msgPhone">Teléfono de contacto: 599874 - 3215489654</string>
+    <string name="msgWelcome">Bienvenido</string>
+    <string name="msgDescription">Tienda que ofrece a sus clientes las mejores comidas rapidas de la ciudad</string>
+    <string name="msgLogo">AppLogo</string>
+    <string name="msgSearch">Buscar en FoodIsGr8</string>
+    <string name="msgProductName">Product Name</string>
+    <string name="msgProductDescription">Product Description</string>
+    <string name="msgService">Service Name</string>
+    <string name="msgServiceDescription">Service Description</string>
+    <string name="msgStoreName">Store Name</string>
+    <string name="msgStoreDescription">Store Description</string>
+    <string name="msgNoFavorites">No tienes Favoritos... Aún!</string>
+    <string name="msgDetailTitle">Detalle del Producto</string>
+    <string name="msgGoHome">Volver al Inicio</string>
+    <string name="msgDetails">Ver Detalles</string>
+    <string name="msgAddFavorites">Agregar A Favoritos</string>
 </resources>

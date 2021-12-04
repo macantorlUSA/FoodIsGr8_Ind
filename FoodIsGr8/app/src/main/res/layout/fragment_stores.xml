@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vista.fragments.FragmentStores" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgStore1"
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    android:contentDescription="@string/msgLogo"
+                    tools:srcCompat="@drawable/isgr8" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtStore1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/msgStoreName" />
+
+                    <TextView
+                        android:id="@+id/txtDescStore1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/msgStoreDescription" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgStore2"
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    android:contentDescription="@string/msgLogo"
+                    tools:srcCompat="@drawable/isgr8" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtStore2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/msgStoreName" />
+
+                    <TextView
+                        android:id="@+id/txtDescStore2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/msgStoreDescription" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgStore3"
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    android:contentDescription="@string/msgLogo"
+                    tools:srcCompat="@drawable/isgr8" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtStore3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/msgStoreName" />
+
+                    <TextView
+                        android:id="@+id/txtDescStore3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/msgStoreDescription" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -2,14 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".vista.activities.MainActivity">
+    tools:context=".vista.fragments.FragmentMenu">
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/frmContainer"
-        android:name="co.usa.mintic.ciclo4.foodisgr8.vista.fragments.FragmentHome"
+    <ListView
+        android:id="@+id/lstProductList"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout="@layout/fragment_home" />
+        android:layout_height="wrap_content" />
+
 </LinearLayout>
