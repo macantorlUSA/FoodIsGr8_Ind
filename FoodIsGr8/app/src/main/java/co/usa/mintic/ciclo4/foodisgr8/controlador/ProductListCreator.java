@@ -17,12 +17,12 @@ import co.usa.mintic.ciclo4.foodisgr8.R;
 import co.usa.mintic.ciclo4.foodisgr8.controlador.objetos.ProductItem;
 import co.usa.mintic.ciclo4.foodisgr8.vista.activities.ActivityProductDetail;
 
-public class ListCreator extends BaseAdapter {
+public class ProductListCreator extends BaseAdapter {
 
     private ArrayList<ProductItem> listItems;
     private Context context;
 
-    public ListCreator(ArrayList<ProductItem> listItems, Context context) {
+    public ProductListCreator(ArrayList<ProductItem> listItems, Context context) {
         this.listItems = listItems;
         this.context = context;
     }
@@ -45,12 +45,12 @@ public class ListCreator extends BaseAdapter {
     @Override
     public View getView(int position, View view, ViewGroup viewGroup) {
         ProductItem item = (ProductItem) getItem(position);
-        view = LayoutInflater.from(context).inflate(R.layout.component_item, null);
-        ImageView ImgImage = (ImageView) view.findViewById(R.id.imgImage);
+        view = LayoutInflater.from(context).inflate(R.layout.component_product_item, null);
+        ImageView ImgImage = (ImageView) view.findViewById(R.id.imgProductImage);
         ImgImage.setImageDrawable(view.getResources().getDrawable(item.getImagen()));
-        TextView txtName = (TextView) view.findViewById(R.id.txtName);
+        TextView txtName = (TextView) view.findViewById(R.id.txtProductName);
         txtName.setText(item.getTitulo());
-        TextView txtDescription = (TextView) view.findViewById(R.id.txtDescription);
+        TextView txtDescription = (TextView) view.findViewById(R.id.txtProductDescription);
         txtDescription.setText(item.getContenido());
         Button btnDetails = (Button) view.findViewById(R.id.btnDetails);
         btnDetails.setOnClickListener(new View.OnClickListener() {
