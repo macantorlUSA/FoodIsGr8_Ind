@@ -55,8 +55,8 @@ public class MainActivity extends AppCompatActivity {
     Fragment frmFavorites;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected void onCreate(Bundle bundle) {
+        super.onCreate(bundle);
         setContentView(R.layout.activity_main);
         actionBar = getSupportActionBar();
         actionBar.setDisplayShowHomeEnabled(true);
@@ -77,20 +77,20 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        int id = item.getItemId();
-        if (id == R.id.btnHome) {
+        int itemId = item.getItemId();
+        if (itemId == R.id.btnHome) {
             Toast.makeText(this, "Cargando Pantalla Inicial...", Toast.LENGTH_SHORT).show();
             getSupportFragmentManager().beginTransaction().replace(R.id.frmContainer, frmHome).commit();
-        } else if (id == R.id.itmMenu) {
+        } else if (itemId == R.id.itmMenu) {
             Toast.makeText(this, "Cargando Menú...", Toast.LENGTH_SHORT).show();
             getSupportFragmentManager().beginTransaction().replace(R.id.frmContainer, frmMenu).commit();
-        } else if (id == R.id.itmServices) {
+        } else if (itemId == R.id.itmServices) {
             Toast.makeText(this, "Cargando Servicios...", Toast.LENGTH_SHORT).show();
             getSupportFragmentManager().beginTransaction().replace(R.id.frmContainer, frmServices).commit();
-        } else if (id == R.id.itmStores) {
+        } else if (itemId == R.id.itmStores) {
             Toast.makeText(this, "Cargando Sucursales...", Toast.LENGTH_SHORT).show();
             getSupportFragmentManager().beginTransaction().replace(R.id.frmContainer, frmStores).commit();
-        } else if (id == R.id.btnFavorites) {
+        } else if (itemId == R.id.btnFavorites) {
             Toast.makeText(this, "Módulo FAVORITOS disponible próximamente", Toast.LENGTH_SHORT).show();
             getSupportFragmentManager().beginTransaction().replace(R.id.frmContainer, frmFavorites).commit();
         }
