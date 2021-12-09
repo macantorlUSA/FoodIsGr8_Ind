@@ -1,4 +1,4 @@
-package co.usa.mintic.ciclo4.foodisgr8.vista.fragments;
+package co.usa.mintic.ciclo4.foodisgr8.controlador.fragments;
 
 import android.os.Bundle;
 

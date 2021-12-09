@@ -1,4 +1,4 @@
-package co.usa.mintic.ciclo4.foodisgr8.vista.activities;
+package co.usa.mintic.ciclo4.foodisgr8.controlador.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import co.usa.mintic.ciclo4.foodisgr8.R;
-import co.usa.mintic.ciclo4.foodisgr8.controlador.objetos.ProductItem;
+import co.usa.mintic.ciclo4.foodisgr8.modelo.objetos.ProductItem;
 
 public class ActivityProductDetail extends AppCompatActivity {
 

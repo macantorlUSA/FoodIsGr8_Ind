@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    tools:context=".vista.fragments.FragmentHome">
+    tools:context=".controlador.fragments.FragmentHome">
 
     <TextView
         android:id="@+id/txtWelcome"

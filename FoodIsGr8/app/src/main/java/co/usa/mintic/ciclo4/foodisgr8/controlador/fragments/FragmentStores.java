@@ -1,4 +1,4 @@
-package co.usa.mintic.ciclo4.foodisgr8.vista.fragments;
+package co.usa.mintic.ciclo4.foodisgr8.controlador.fragments;
 
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -14,15 +14,16 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 import co.usa.mintic.ciclo4.foodisgr8.R;
-import co.usa.mintic.ciclo4.foodisgr8.controlador.ProductListCreator;
-import co.usa.mintic.ciclo4.foodisgr8.controlador.StoreListCreator;
-import co.usa.mintic.ciclo4.foodisgr8.controlador.objetos.ProductItem;
-import co.usa.mintic.ciclo4.foodisgr8.controlador.objetos.StoreItem;
+import co.usa.mintic.ciclo4.foodisgr8.modelo.StoreListCreator;
+import co.usa.mintic.ciclo4.foodisgr8.modelo.objetos.ProductItem;
+import co.usa.mintic.ciclo4.foodisgr8.modelo.objetos.StoreItem;
 
 public class FragmentStores extends Fragment {
 
-    public FragmentStores() {
+    ArrayList<StoreItem> registros;
 
+    public FragmentStores(ArrayList<StoreItem> source) {
+        this.registros = source;
     }
 
     @Override
@@ -33,16 +34,8 @@ public class FragmentStores extends Fragment {
         Drawable drawable = getResources().getDrawable(R.drawable.map);
         imgCode.setImageDrawable(drawable);
         ListView lstItems = returnValue.findViewById(R.id.lstStoreList);
-        StoreListCreator creator = new StoreListCreator(loadItems(), returnValue.getContext());
+        StoreListCreator creator = new StoreListCreator(registros, returnValue.getContext());
         lstItems.setAdapter(creator);
         return returnValue;
-    }
-
-    private ArrayList<StoreItem> loadItems() {
-        ArrayList<StoreItem> list = new ArrayList<StoreItem>();
-        for (int index = 1; index <= 10; index++) {
-            list.add(new StoreItem(getString(R.string.msgStoreName) + " No. " + index, getString(R.string.msgStoreDescription)));
-        }
-        return list;
     }
 }

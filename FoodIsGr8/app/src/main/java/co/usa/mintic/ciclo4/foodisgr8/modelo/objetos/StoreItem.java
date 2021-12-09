@@ -1,4 +1,4 @@
-package co.usa.mintic.ciclo4.foodisgr8.controlador.objetos;
+package co.usa.mintic.ciclo4.foodisgr8.modelo.objetos;
 
 import java.io.Serializable;
 

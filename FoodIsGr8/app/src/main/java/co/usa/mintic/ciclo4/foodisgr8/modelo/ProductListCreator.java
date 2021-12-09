@@ -1,4 +1,4 @@
-package co.usa.mintic.ciclo4.foodisgr8.controlador;
+package co.usa.mintic.ciclo4.foodisgr8.modelo;
 
 import android.content.Context;
 import android.content.Intent;
@@ -14,8 +14,8 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 import co.usa.mintic.ciclo4.foodisgr8.R;
-import co.usa.mintic.ciclo4.foodisgr8.controlador.objetos.ProductItem;
-import co.usa.mintic.ciclo4.foodisgr8.vista.activities.ActivityProductDetail;
+import co.usa.mintic.ciclo4.foodisgr8.modelo.objetos.ProductItem;
+import co.usa.mintic.ciclo4.foodisgr8.controlador.activities.ActivityProductDetail;
 
 public class ProductListCreator extends BaseAdapter {
 
@@ -46,8 +46,8 @@ public class ProductListCreator extends BaseAdapter {
     public View getView(int position, View view, ViewGroup viewGroup) {
         ProductItem item = (ProductItem) getItem(position);
         view = LayoutInflater.from(context).inflate(R.layout.component_product_item, null);
-        ImageView ImgImage = (ImageView) view.findViewById(R.id.imgProductImage);
-        ImgImage.setImageDrawable(view.getResources().getDrawable(item.getImagen()));
+        ImageView imgPhoto = (ImageView) view.findViewById(R.id.imgProductImage);
+        imgPhoto.setImageDrawable(view.getResources().getDrawable(item.getImagen()));
         TextView txtName = (TextView) view.findViewById(R.id.txtProductName);
         txtName.setText(item.getTitulo());
         TextView txtDescription = (TextView) view.findViewById(R.id.txtProductDescription);

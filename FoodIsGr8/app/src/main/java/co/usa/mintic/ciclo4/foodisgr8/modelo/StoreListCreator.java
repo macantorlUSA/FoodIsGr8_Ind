@@ -1,4 +1,4 @@
-package co.usa.mintic.ciclo4.foodisgr8.controlador;
+package co.usa.mintic.ciclo4.foodisgr8.modelo;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,7 +11,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import co.usa.mintic.ciclo4.foodisgr8.R;
-import co.usa.mintic.ciclo4.foodisgr8.controlador.objetos.StoreItem;
+import co.usa.mintic.ciclo4.foodisgr8.modelo.objetos.StoreItem;
 
 public class StoreListCreator extends BaseAdapter {
 

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:contentDescription="@string/msgLogo"
     android:orientation="vertical"
-    tools:context=".vista.fragments.FragmentStores">
+    tools:context=".controlador.fragments.FragmentStores">
 
     <ImageView
         android:id="@+id/imgMap"
