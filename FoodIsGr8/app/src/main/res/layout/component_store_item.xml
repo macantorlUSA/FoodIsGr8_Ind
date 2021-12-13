@@ -31,6 +31,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/msgStoreDescription" />
+
+        <Button
+            android:id="@+id/btnViewMap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btnViewMap"
+            android:textColor="#616161" />
     </LinearLayout>
 
 </LinearLayout>

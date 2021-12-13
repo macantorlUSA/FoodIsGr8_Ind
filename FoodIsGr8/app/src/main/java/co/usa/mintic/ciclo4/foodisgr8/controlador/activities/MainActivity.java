@@ -154,7 +154,7 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<StoreItem> returnValue = new ArrayList<StoreItem>();
         Cursor cursor = consultor.rawQuery("SELECT * FROM tblStores", null);
         while (cursor.moveToNext()) {
-            returnValue.add(new StoreItem(cursor.getString(0), cursor.getString(1)));
+            returnValue.add(new StoreItem(cursor.getString(0), cursor.getString(1), cursor.getDouble(2), cursor.getDouble(3)));
         }
         return returnValue;
     }

@@ -5,8 +5,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import org.osmdroid.util.GeoPoint;
+import org.osmdroid.views.MapController;
+import org.osmdroid.views.MapView;
+import org.osmdroid.views.overlay.Marker;
 
 import java.util.ArrayList;
 
@@ -17,10 +24,12 @@ public class StoreListCreator extends BaseAdapter {
 
     private ArrayList<StoreItem> listItems;
     private Context context;
+    private View mainView;
 
-    public StoreListCreator(ArrayList<StoreItem> listItems, Context context) {
+    public StoreListCreator(ArrayList<StoreItem> listItems, Context context, View mainView) {
         this.listItems = listItems;
         this.context = context;
+        this.mainView = mainView;
     }
 
     @Override
@@ -48,6 +57,22 @@ public class StoreListCreator extends BaseAdapter {
         txtName.setText(item.getNombre());
         TextView txtDescription = (TextView) view.findViewById(R.id.txtStoreDesc);
         txtDescription.setText(item.getDireccion());
+        Button btnMap = (Button) view.findViewById(R.id.btnViewMap);
+        btnMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MapView mapView = (MapView) mainView.findViewById(R.id.mapStores);
+                GeoPoint startPoint = new GeoPoint(item.getLatitud(), item.getLongitud());
+                Marker startMarker = new Marker(mapView);
+                startMarker.setTitle(item.getNombre());
+                startMarker.setSubDescription(item.getDireccion());
+                startMarker.setPosition(startPoint);
+                startMarker.setAnchor(Marker.ANCHOR_CENTER, Marker.ANCHOR_BOTTOM);
+                mapView.getOverlays().add(startMarker);
+                MapController mapController = (MapController) mapView.getController();
+                mapController.setCenter(startPoint);
+            }
+        });
         return view;
     }
 }

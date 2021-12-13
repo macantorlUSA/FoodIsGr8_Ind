@@ -29,9 +29,11 @@ public class ConectorBD extends SQLiteOpenHelper {
     }
 
     private void createStoresRecords(SQLiteDatabase db) {
-        for (int index = 1; index <= 10; index++) {
-            db.execSQL("insert into tblStores values('" + context.getString(R.string.msgStoreName) + " No. " + index + "', '" + context.getString(R.string.msgStoreDescription) + "')");
-        }
+        db.execSQL("insert into tblStores values('Macarena', 'Cerca a Museo Nacional.',4.6137826, -74.0686805)");
+        db.execSQL("insert into tblStores values('Bosa', 'En la mejor zona del sur de Bogotá.',4.6020996, -74.1919313)");
+        db.execSQL("insert into tblStores values('Centro Comecial Titán Plaza', 'Todo centro comercial, debe tener una gran tienda... Y ellos nos tienen!',4.6947133, -74.0883767)");
+        db.execSQL("insert into tblStores values('Norte', 'En la mejor zona del norte de Bogotá.',4.7387513, -74.0449956)");
+        db.execSQL("insert into tblStores values('Soacha', 'En construcción, pero muy pronto estará disponible!',4.5755322, -74.2487118)");
     }
 
     private void createServicesRecords(SQLiteDatabase db) {
@@ -61,7 +63,7 @@ public class ConectorBD extends SQLiteOpenHelper {
     private void createTables(SQLiteDatabase db) {
         db.execSQL("CREATE TABLE tblProducts(id INT, titulo TEXT,descripcion TEXT)");
         db.execSQL("CREATE TABLE tblServices(titulo TEXT,descripcion TEXT)");
-        db.execSQL("CREATE TABLE tblStores(titulo TEXT,descripcion TEXT)");
+        db.execSQL("CREATE TABLE tblStores(titulo TEXT,descripcion TEXT, latitud REAL, longitud REAL)");
     }
 
     @Override

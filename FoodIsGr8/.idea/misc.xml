@@ -41,6 +41,7 @@
         <entry key="..\:/Users/Miguel Cantor/AndroidStudioProjects/FoodIsGr8_Ind/app/src/main/res/layout/component_stores_detail.xml" value="0.125" />
         <entry key="..\:/Users/Miguel Cantor/AndroidStudioProjects/FoodIsGr8_Ind/app/src/main/res/layout/fragment_services.xml" value="0.1" />
         <entry key="..\:/Users/Miguel Cantor/AndroidStudioProjects/FoodIsGr8_Ind/app/src/main/res/layout/fragment_stores.xml" value="0.1" />
+        <entry key="..\:/Users/Miguel Cantor/AndroidStudioProjects/FoodIsGr8_Ind/app/src/main/res/xml/network_security_config.xml" value="0.1" />
       </map>
     </option>
   </component>
@@ -49,5 +50,8 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="SuppressKotlinCodeStyleNotification">
+    <option name="disableForAll" value="true" />
   </component>
 </project>

@@ -8,11 +8,12 @@
     android:orientation="vertical"
     tools:context=".controlador.fragments.FragmentStores">
 
-    <ImageView
-        android:id="@+id/imgMap"
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapStores"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        tools:src="@tools:sample/avatars" />
+        android:layout_height="400dp">
+
+    </org.osmdroid.views.MapView>
 
     <ListView
         android:id="@+id/lstStoreList"
