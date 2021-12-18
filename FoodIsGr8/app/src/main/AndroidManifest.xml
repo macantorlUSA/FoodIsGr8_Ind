@@ -17,6 +17,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FoodIsGr8">
         <activity
+            android:name=".controlador.activities.ActivityFavoriteDetail"
+            android:exported="true" />
+        <activity
             android:name=".controlador.activities.ActivitySplash"
             android:exported="true">
             <intent-filter>
@@ -25,9 +28,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".controlador.activities.ActivityProductDetail"
-            android:exported="true" />
         <activity
             android:name=".controlador.activities.MainActivity"
             android:exported="true" />

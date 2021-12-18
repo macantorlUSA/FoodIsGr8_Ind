@@ -33,12 +33,17 @@
         <entry key="..\:/Users/Miguel Cantor/AndroidStudioProjects/FoodIsGr8_IND/app/src/main/res/layout/fragment_services.xml" value="0.22" />
         <entry key="..\:/Users/Miguel Cantor/AndroidStudioProjects/FoodIsGr8_IND/app/src/main/res/layout/fragment_stores.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Miguel Cantor/AndroidStudioProjects/FoodIsGr8_IND/app/src/main/res/menu/main_menu.xml" value="0.33" />
+        <entry key="..\:/Users/Miguel Cantor/AndroidStudioProjects/FoodIsGr8_Ind/app/src/main/res/layout/activity_favorite_detail.xml" value="0.1" />
         <entry key="..\:/Users/Miguel Cantor/AndroidStudioProjects/FoodIsGr8_Ind/app/src/main/res/layout/activity_fullscreen.xml" value="0.1" />
+        <entry key="..\:/Users/Miguel Cantor/AndroidStudioProjects/FoodIsGr8_Ind/app/src/main/res/layout/activity_product_detail.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Miguel Cantor/AndroidStudioProjects/FoodIsGr8_Ind/app/src/main/res/layout/activity_splash.xml" value="0.1" />
-        <entry key="..\:/Users/Miguel Cantor/AndroidStudioProjects/FoodIsGr8_Ind/app/src/main/res/layout/component_product_item.xml" value="0.125" />
+        <entry key="..\:/Users/Miguel Cantor/AndroidStudioProjects/FoodIsGr8_Ind/app/src/main/res/layout/component_favorite_item.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Miguel Cantor/AndroidStudioProjects/FoodIsGr8_Ind/app/src/main/res/layout/component_product_item.xml" value="0.25" />
         <entry key="..\:/Users/Miguel Cantor/AndroidStudioProjects/FoodIsGr8_Ind/app/src/main/res/layout/component_service_item.xml" value="0.1" />
         <entry key="..\:/Users/Miguel Cantor/AndroidStudioProjects/FoodIsGr8_Ind/app/src/main/res/layout/component_store_item.xml" value="0.33" />
         <entry key="..\:/Users/Miguel Cantor/AndroidStudioProjects/FoodIsGr8_Ind/app/src/main/res/layout/component_stores_detail.xml" value="0.125" />
+        <entry key="..\:/Users/Miguel Cantor/AndroidStudioProjects/FoodIsGr8_Ind/app/src/main/res/layout/fragment_favorites.xml" value="0.1" />
+        <entry key="..\:/Users/Miguel Cantor/AndroidStudioProjects/FoodIsGr8_Ind/app/src/main/res/layout/fragment_menu.xml" value="0.1" />
         <entry key="..\:/Users/Miguel Cantor/AndroidStudioProjects/FoodIsGr8_Ind/app/src/main/res/layout/fragment_services.xml" value="0.1" />
         <entry key="..\:/Users/Miguel Cantor/AndroidStudioProjects/FoodIsGr8_Ind/app/src/main/res/layout/fragment_stores.xml" value="0.1" />
         <entry key="..\:/Users/Miguel Cantor/AndroidStudioProjects/FoodIsGr8_Ind/app/src/main/res/xml/network_security_config.xml" value="0.1" />
