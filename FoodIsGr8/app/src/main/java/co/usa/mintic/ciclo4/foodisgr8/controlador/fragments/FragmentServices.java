@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import co.usa.mintic.ciclo4.foodisgr8.R;
 import co.usa.mintic.ciclo4.foodisgr8.modelo.ServiceListCreator;
@@ -18,9 +19,9 @@ import co.usa.mintic.ciclo4.foodisgr8.modelo.objetos.ServiceItem;
 
 public class FragmentServices extends Fragment {
 
-    ArrayList<ServiceItem> registros;
+    List<ServiceItem> registros;
 
-    public FragmentServices(ArrayList<ServiceItem> source) {
+    public FragmentServices(List<ServiceItem> source) {
         this.registros = source;
     }
 

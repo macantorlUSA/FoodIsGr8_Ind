@@ -9,16 +9,17 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import co.usa.mintic.ciclo4.foodisgr8.R;
 import co.usa.mintic.ciclo4.foodisgr8.modelo.objetos.ServiceItem;
 
 public class ServiceListCreator extends BaseAdapter {
 
-    private ArrayList<ServiceItem> listItems;
+    private List<ServiceItem> listItems;
     private Context context;
 
-    public ServiceListCreator(ArrayList<ServiceItem> listItems, Context context) {
+    public ServiceListCreator(List<ServiceItem> listItems, Context context) {
         this.listItems = listItems;
         this.context = context;
     }

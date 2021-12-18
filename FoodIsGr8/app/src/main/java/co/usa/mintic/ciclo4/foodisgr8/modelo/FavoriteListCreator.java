@@ -14,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import co.usa.mintic.ciclo4.foodisgr8.R;
 import co.usa.mintic.ciclo4.foodisgr8.controlador.activities.ActivityFavoriteDetail;
@@ -22,11 +23,11 @@ import co.usa.mintic.ciclo4.foodisgr8.modelo.objetos.FavoriteItem;
 
 public class FavoriteListCreator extends BaseAdapter {
 
-    private ArrayList<FavoriteItem> listItems;
+    private List<FavoriteItem> listItems;
     private Context context;
     MainActivity mainView;
 
-    public FavoriteListCreator(ArrayList<FavoriteItem> listItems, Context context, MainActivity view) {
+    public FavoriteListCreator(List<FavoriteItem> listItems, Context context, MainActivity view) {
         this.listItems = listItems;
         this.context = context;
         this.mainView = view;

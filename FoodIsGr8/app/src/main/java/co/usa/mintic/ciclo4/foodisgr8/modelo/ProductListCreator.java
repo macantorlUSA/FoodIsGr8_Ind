@@ -13,6 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import co.usa.mintic.ciclo4.foodisgr8.R;
 import co.usa.mintic.ciclo4.foodisgr8.controlador.activities.MainActivity;
@@ -20,11 +21,11 @@ import co.usa.mintic.ciclo4.foodisgr8.modelo.objetos.ProductItem;
 
 public class ProductListCreator extends BaseAdapter {
 
-    private ArrayList<ProductItem> listItems;
+    private List<ProductItem> listItems;
     private Context context;
     MainActivity mainView;
 
-    public ProductListCreator(ArrayList<ProductItem> listItems, Context context, MainActivity view) {
+    public ProductListCreator(List<ProductItem> listItems, Context context, MainActivity view) {
         this.listItems = listItems;
         this.context = context;
         this.mainView = view;

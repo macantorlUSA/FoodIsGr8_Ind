@@ -16,17 +16,18 @@ import org.osmdroid.views.MapView;
 import org.osmdroid.views.overlay.Marker;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import co.usa.mintic.ciclo4.foodisgr8.R;
 import co.usa.mintic.ciclo4.foodisgr8.modelo.objetos.StoreItem;
 
 public class StoreListCreator extends BaseAdapter {
 
-    private ArrayList<StoreItem> listItems;
+    private List<StoreItem> listItems;
     private Context context;
     private View mainView;
 
-    public StoreListCreator(ArrayList<StoreItem> listItems, Context context, View mainView) {
+    public StoreListCreator(List<StoreItem> listItems, Context context, View mainView) {
         this.listItems = listItems;
         this.context = context;
         this.mainView = mainView;

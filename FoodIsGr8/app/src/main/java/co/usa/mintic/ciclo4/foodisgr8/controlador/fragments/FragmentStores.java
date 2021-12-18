@@ -19,6 +19,7 @@ import org.osmdroid.views.overlay.mylocation.GpsMyLocationProvider;
 import org.osmdroid.views.overlay.mylocation.MyLocationNewOverlay;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import co.usa.mintic.ciclo4.foodisgr8.R;
 import co.usa.mintic.ciclo4.foodisgr8.modelo.StoreListCreator;
@@ -29,9 +30,9 @@ public class FragmentStores extends Fragment {
     MapView mapView;
     MapController mapController;
 
-    ArrayList<StoreItem> registros;
+    List<StoreItem> registros;
 
-    public FragmentStores(ArrayList<StoreItem> source) {
+    public FragmentStores(List<StoreItem> source) {
         this.registros = source;
     }
 

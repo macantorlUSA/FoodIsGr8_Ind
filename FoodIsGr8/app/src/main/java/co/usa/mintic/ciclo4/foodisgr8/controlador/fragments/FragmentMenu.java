@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import co.usa.mintic.ciclo4.foodisgr8.R;
 import co.usa.mintic.ciclo4.foodisgr8.controlador.activities.MainActivity;
@@ -18,10 +19,10 @@ import co.usa.mintic.ciclo4.foodisgr8.modelo.objetos.ProductItem;
 
 public class FragmentMenu extends Fragment {
 
-    ArrayList<ProductItem> registros;
+    List<ProductItem> registros;
     MainActivity mainView;
 
-    public FragmentMenu(ArrayList<ProductItem> source, MainActivity view) {
+    public FragmentMenu(List<ProductItem> source, MainActivity view) {
         this.registros = source;
         this.mainView = view;
     }

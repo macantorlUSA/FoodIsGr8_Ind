@@ -9,6 +9,7 @@ import android.widget.ListView;
 import androidx.fragment.app.Fragment;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import co.usa.mintic.ciclo4.foodisgr8.R;
 import co.usa.mintic.ciclo4.foodisgr8.controlador.activities.MainActivity;
@@ -17,11 +18,11 @@ import co.usa.mintic.ciclo4.foodisgr8.modelo.objetos.FavoriteItem;
 
 public class FragmentFavorites extends Fragment {
 
-    private ArrayList<FavoriteItem> registros;
+    private List<FavoriteItem> registros;
     MainActivity mainView;
     private FavoriteListCreator creator;
 
-    public FragmentFavorites(ArrayList<FavoriteItem> source, MainActivity view) {
+    public FragmentFavorites(List<FavoriteItem> source, MainActivity view) {
         this.setRegistros(source);
         this.mainView = view;
     }
@@ -44,11 +45,11 @@ public class FragmentFavorites extends Fragment {
         this.creator = creator;
     }
 
-    public ArrayList<FavoriteItem> getRegistros() {
+    public List<FavoriteItem> getRegistros() {
         return registros;
     }
 
-    public void setRegistros(ArrayList<FavoriteItem> registros) {
+    public void setRegistros(List<FavoriteItem> registros) {
         this.registros = registros;
     }
 }

@@ -9,8 +9,6 @@ import androidx.fragment.app.Fragment;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteStatement;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.util.Base64;
 import android.view.Menu;
@@ -29,8 +27,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
+import java.util.List;
 
 import co.usa.mintic.ciclo4.foodisgr8.controlador.fragments.FragmentFavorites;
 import co.usa.mintic.ciclo4.foodisgr8.controlador.fragments.FragmentHome;
@@ -140,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
      *
      * @return Lista de registros en la Base de Datos
      */
-    private ArrayList<ProductItem> obtenerProductos() {
+    private List<ProductItem> obtenerProductos() {
         ArrayList<ProductItem> returnValue = new ArrayList<ProductItem>();
         String url = "https://g83f1de06147000-foodisgr8.adb.sa-santiago-1.oraclecloudapps.com/ords/admin/foodIsGr8/products";
         RequestQueue requestQueue = Volley.newRequestQueue(this);
@@ -173,7 +171,7 @@ public class MainActivity extends AppCompatActivity {
      *
      * @return Lista de registros en la Base de Datos
      */
-    private ArrayList<ServiceItem> obtenerServicios() {
+    private List<ServiceItem> obtenerServicios() {
         ArrayList<ServiceItem> returnValue = new ArrayList<ServiceItem>();
         String url = "https://g83f1de06147000-foodisgr8.adb.sa-santiago-1.oraclecloudapps.com/ords/admin/foodIsGr8/services";
         RequestQueue requestQueue = Volley.newRequestQueue(this);
@@ -205,7 +203,7 @@ public class MainActivity extends AppCompatActivity {
      *
      * @return Lista de registros en la Base de Datos
      */
-    private ArrayList<StoreItem> obtenerTiendas() {
+    private List<StoreItem> obtenerTiendas() {
         ArrayList<StoreItem> returnValue = new ArrayList<StoreItem>();
         String url = "https://g83f1de06147000-foodisgr8.adb.sa-santiago-1.oraclecloudapps.com/ords/admin/foodIsGr8/stores";
         RequestQueue requestQueue = Volley.newRequestQueue(this);
@@ -237,7 +235,7 @@ public class MainActivity extends AppCompatActivity {
      *
      * @return Lista de registros en la Base de Datos
      */
-    public ArrayList<FavoriteItem> obtenerFavoritos() {
+    public List<FavoriteItem> obtenerFavoritos() {
         ArrayList<FavoriteItem> returnValue = new ArrayList<FavoriteItem>();
         Cursor cursor = consultor.rawQuery("SELECT * FROM tblFavorites", null);
         while (cursor.moveToNext()) {
@@ -251,8 +249,8 @@ public class MainActivity extends AppCompatActivity {
      *
      * @return Proceso completado con éxito.
      */
-    public void eliminarFavoritos(Integer id) {
-        editor.delete("tblFavorites", "id =" + id.toString(), null);
+    public void eliminarFavoritos(Integer favoriteId) {
+        editor.delete("tblFavorites", "id =" + favoriteId.toString(), null);
         frmFavorites.setRegistros(obtenerFavoritos());
         frmFavorites.getCreator().notifyDataSetChanged();
     }
@@ -267,7 +265,6 @@ public class MainActivity extends AppCompatActivity {
         if (cursor.moveToFirst()) {
             Toast.makeText(getApplicationContext(), "El producto ya esta agregado en favoritos.", Toast.LENGTH_SHORT).show();
         } else {
-            ByteArrayOutputStream stream = new ByteArrayOutputStream();
             String sql = "INSERT INTO tblFavorites VALUES(?,?,?,?)";
             SQLiteStatement insertQuery = editor.compileStatement(sql);
             insertQuery.clearBindings();
